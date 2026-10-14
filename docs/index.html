@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glass Widget — widget de bureau en verre pour Windows</title>
+  <meta name="description" content="Horloge, calendrier, données du PC et raccourcis d'applications sur ton bureau Windows, dans des panneaux de verre dépoli. Gratuit.">
+  <meta property="og:title" content="Glass Widget">
+  <meta property="og:description" content="Ton bureau Windows, en verre dépoli.">
+  <meta property="og:image" content="img/fullscreen-fr.jpg">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+  <header class="nav glass">
+    <a class="brand" href="#top"><img src="img/icon.png" alt=""><span>Glass Widget</span></a>
+    <nav class="links">
+      <a href="#features" data-i18n="nav_features"></a>
+      <a href="#install" data-i18n="nav_install"></a>
+      <a href="#privacy" data-i18n="nav_privacy"></a>
+    </nav>
+    <button class="lang" id="lang" aria-label="Langue / Language">EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1 data-i18n="hero_title"></h1>
+      <p class="lead" data-i18n="hero_lead"></p>
+      <div class="cta">
+        <a class="btn" id="download" href="https://github.com/arctis34/glass-widget/releases/latest">
+          <svg viewBox="0 0 24 24"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>
+          <span data-i18n="download"></span>
+        </a>
+        <div class="meta"><span id="dlMeta"></span><span data-i18n="meta_static"></span></div>
+      </div>
+      <figure class="shot glass">
+        <img class="js-shot" data-name="fullscreen" alt="" width="1800" height="979">
+      </figure>
+    </section>
+
+    <section class="features" id="features">
+      <h2 data-i18n="features_title"></h2>
+      <div class="grid">
+        <article class="card glass"><div class="ico">🕒</div><h3 data-i18n="f1_t"></h3><p data-i18n="f1_d"></p></article>
+        <article class="card glass"><div class="ico">📊</div><h3 data-i18n="f2_t"></h3><p data-i18n="f2_d"></p></article>
+        <article class="card glass"><div class="ico">🚀</div><h3 data-i18n="f3_t"></h3><p data-i18n="f3_d"></p></article>
+        <article class="card glass"><div class="ico">🖥️</div><h3 data-i18n="f4_t"></h3><p data-i18n="f4_d"></p></article>
+        <article class="card glass"><div class="ico">🌗</div><h3 data-i18n="f5_t"></h3><p data-i18n="f5_d"></p></article>
+        <article class="card glass"><div class="ico">🔒</div><h3 data-i18n="f6_t"></h3><p data-i18n="f6_d"></p></article>
+      </div>
+    </section>
+
+    <section class="duo">
+      <figure class="glass">
+        <img class="js-shot" data-name="compact" alt="" width="384" height="657">
+        <figcaption data-i18n="cap_compact"></figcaption>
+      </figure>
+      <figure class="glass">
+        <img class="js-shot" data-name="installer" alt="" width="620" height="500">
+        <figcaption data-i18n="cap_installer"></figcaption>
+      </figure>
+    </section>
+
+    <section class="install glass" id="install">
+      <h2 data-i18n="install_title"></h2>
+      <ol>
+        <li data-i18n="step1"></li>
+        <li data-i18n="step2"></li>
+        <li data-i18n="step3"></li>
+      </ol>
+      <p class="tip" data-i18n="tip"></p>
+      <p class="small" data-i18n="uninstall"></p>
+    </section>
+
+    <section class="privacy glass" id="privacy">
+      <h2 data-i18n="privacy_title"></h2>
+      <ul>
+        <li data-i18n="p1"></li>
+        <li data-i18n="p2"></li>
+        <li data-i18n="p3"></li>
+        <li data-i18n="p4"></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a href="https://github.com/arctis34/glass-widget/issues/new" data-i18n="report"></a>
+    <a href="https://github.com/arctis34/glass-widget/releases" data-i18n="notes"></a>
+    <span>© 2026 Glass Widget</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
